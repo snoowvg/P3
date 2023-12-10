@@ -1,5 +1,8 @@
 <mat-card>
   <mat-card-content>
+    <mat-toolbar color='primary'>
+      <span>Produtos</span>
+    </mat-toolbar>
 <form>
   <input matInput>
   <select matNativeControl required>
@@ -8,7 +11,9 @@
     <option value="mercedes">Mercedes</option>
     <option value="audi">Audi</option>
   </select>
-  <button mat-button>add</button>
+  <button mat-mini-fab color="primary" aria-label="Example icon button with a menu icon" (click)=onAdd()>
+    <mat-icon>add</mat-icon>
+  </button>
 </form>
 </mat-card-content>
 </mat-card>

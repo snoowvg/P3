@@ -1,27 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import {MatCardModule} from '@angular/material/card';
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MaterialModule } from './material/material.module';
+import { AddprodutoComponent } from './addproduto/addproduto.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListaProdutosComponent
+    ListaProdutosComponent,
+    AddprodutoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatCardModule
-
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
